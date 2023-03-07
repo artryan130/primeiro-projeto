@@ -479,7 +479,9 @@
 
   <nomeCurso [nome]="nomeDoCurso"></nomeCurso>
 
-  <contador [valor]="valorContador"></contador>
+  <contador [valor]="valorContador" (mudouValor)="onMudouValor($event)"></contador>
+
+  <app-ciclo></app-ciclo>
 
 </div>
 

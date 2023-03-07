@@ -9,6 +9,7 @@ import { MeuSegundoComponent } from './meu-segundo/meu-segundo.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NomeCursoComponent } from './nome-curso/nome-curso.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     DataBindingComponent,
     NomeCursoComponent,
     OutputPropertyComponent,
+    CicloComponent,
   ],
   imports: [
     BrowserModule,

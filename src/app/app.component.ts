@@ -11,4 +11,8 @@ export class AppComponent {
   nomeDoCurso: string = 'angular';
 
   valorContador: number = 11;
+
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor);
+  }
 }
