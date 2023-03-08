@@ -10,6 +10,10 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NomeCursoComponent } from './nome-curso/nome-curso.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+import { ButtonModalComponent } from './button-modal/button-modal.component';
+
+import { MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { ModalComponent } from './button-modal/modal/modal.component'
 
 @NgModule({
   declarations: [
@@ -20,11 +24,14 @@ import { CicloComponent } from './ciclo/ciclo.component';
     NomeCursoComponent,
     OutputPropertyComponent,
     CicloComponent,
+    ButtonModalComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CursosModule
+    CursosModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
