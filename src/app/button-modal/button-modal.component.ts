@@ -19,4 +19,8 @@ export class ButtonModalComponent {
     this.isModalOpen = !this.isModalOpen;
   }
 
+  onMudouValor(evento: any) {
+    this.isModalOpen = !evento;
+  }
+
 }

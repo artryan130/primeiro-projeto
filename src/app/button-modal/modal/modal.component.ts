@@ -7,17 +7,18 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ModalComponent {
 
-  // @Input() isModalOpen: boolean = false;
+  @Input() valor: boolean = false;
 
-  @Output() statusModal = new EventEmitter();
+  @Output() modouValor = new EventEmitter();
 
   // openModal() {
   //   this.isModalOpen = !this.isModalOpen;
   // }
 
-  // statusAlterado() {
-  //   this.isModalOpen = !this.isModalOpen;
-  //   this.statusModal.emit({ novoStatus : this.isModalOpen})
-  // }
+  ngOnInit(){}
+
+  enviarInformacao(){
+    this.modouValor.emit({novoValor: this.valor});
+  }
 
 }

@@ -3,4 +3,4 @@
     <span>Encontrar</span>
 </button>
 
-<app-modal *ngIf="isModalOpen"></app-modal>
+<app-modal *ngIf="isModalOpen" (modouValor)="onMudouValor($event)"></app-modal>
