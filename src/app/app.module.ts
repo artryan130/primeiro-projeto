@@ -13,7 +13,8 @@ import { CicloComponent } from './ciclo/ciclo.component';
 import { ButtonModalComponent } from './button-modal/button-modal.component';
 
 import { MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { ModalComponent } from './button-modal/modal/modal.component'
+import { ModalComponent } from './button-modal/modal/modal.component';
+import { ComponentRowComponent } from './button-modal/modal/component-row/component-row.component'
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ModalComponent } from './button-modal/modal/modal.component'
     CicloComponent,
     ButtonModalComponent,
     ModalComponent,
+    ComponentRowComponent,
   ],
   imports: [
     BrowserModule,

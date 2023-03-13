@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Ativo</th>
+            <th scope="col">Nome</th>
+            <th scope="col">N° Reserva</th>
+            <th scope="col">Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of arrayDeObjetos">
+            <td><input type="checkbox" [checked]="cliente.ativo" (change)="onMudouChecked($event)"></td>
+            <td>{{ cliente.nome }}</td>
+            <td class="column">{{ cliente.reserva}}</td>
+            <td>{{ cliente.data}}</td>
+        </tr>
+    </tbody>
+</table>

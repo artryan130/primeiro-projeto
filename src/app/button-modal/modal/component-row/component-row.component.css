@@ -1,0 +1,9 @@
+.linha {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+}
